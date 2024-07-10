@@ -6,9 +6,9 @@ If you're interested in capturing respondent location from a Google Form documen
 * [index.html](index.html): Includes html file for Google Apps Script Extension.
 
 ## Instructions
-![Instructions1](instructions/GeoLocation%20Form%20Instructions-1.png)
-![Instructions2](instructions/GeoLocation%20Form%20Instructions-2.png)
-![Instructions3](instructions/GeoLocation%20Form%20Instructions-3.png)
-![Instructions4](instructions/GeoLocation%20Form%20Instructions-4.png)
-![Instructions5](instructions/GeoLocation%20Form%20Instructions-5.png)
+![Instructions1](instructions/inst1.png)
+![Instructions2](instructions/inst2.png)
+![Instructions3](instructions/inst3.png)
+![Instructions4](instructions/inst4.png)
+![Instructions5](instructions/inst5.png)
 
