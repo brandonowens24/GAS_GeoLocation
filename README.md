@@ -4,4 +4,3 @@ If you're interested in capturing respondent location from a Google Form documen
 ## Instructions
 
 
-
