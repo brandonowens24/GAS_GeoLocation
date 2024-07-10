@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Location Services</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"   integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <script>
+          (function getLocation() {
+            console.log("Getting Location")
+              if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(showPosition);
+              }
+              })()
+              function showPosition(position) {
+              var latitude = position.coords.latitude;
+              var longitude = position.coords.longitude;
+              var mapLink = 'https://www.openstreetmap.org/?mlat=' + latitude + '&mlon=' + longitude + '#map=18/' + latitude + '/' + longitude;
+              getPos(latitude, longitude, mapLink)
+              function getPos(latitude, longitude, mapLink) {
+              google.script.run.saveCoordinates(latitude, longitude, mapLink);
+              }
+          }
+      </script>
+  </head>
+  <body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+        
+        <script>
+        
+        swal({
+            title: "Please Enable Location Services if Prompted",
+            text: "Success submitting your form!",
+            type: "success"
+        }).then(function() {
+            window.location.href = "INSERT YOUR WEBSITE LOCATION HERE";
+        });
+        
+        </script>
+  </body>
+</html>
